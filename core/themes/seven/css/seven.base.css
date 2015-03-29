@@ -8,15 +8,18 @@ body {
 }
 a,
 .link {
-  color: #0074bd;
+  color: #007bbc;
   text-decoration: none;
 }
 a:hover,
 .link:hover {
   text-decoration: underline;
 }
+b, strong {
+  color: #000;
+}
 hr {
-  margin: 0;
+  margin: 15px 0;
   padding: 0;
   border: none;
   height: 1px;
@@ -33,8 +36,9 @@ h3,
 h4,
 h5,
 h6 {
+  color: #000;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 20px 0 10px;
 }
 h1 {
   font-size: 1.538em;

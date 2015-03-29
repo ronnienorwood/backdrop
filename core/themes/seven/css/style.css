@@ -17,7 +17,12 @@
 .item-list ul {
   list-style-type: disc;
   list-style-image: none;
-  margin: 0.25em 0 0.25em 1.5em; /* LTR */
+  margin: 0.25em 0 0.25em 2em; /* LTR */
+}
+.item-list ul,
+.item-list ol {
+  line-height: 160%;
+  padding-left: 0;
 }
 [dir="rtl"] .block ul,
 [dir="rtl"] .item-list ul {
@@ -31,6 +36,9 @@ li.leaf,
 ul.menu li {
   list-style-type: disc;
   list-style-image: none;
+}
+.item-list li {
+  margin: 0;
 }
 ul.menu li {
   margin: 0;
@@ -361,6 +369,61 @@ ul.admin-list li div.description a {
 div.submitted {
   color: #898989;
 }
+div.styleguide {
+  color: #444b53;
+  font-size: 133%;
+  border-top: medium none !important;
+  padding-top: 0 !important;
+}
+h2.styleguide {
+  font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 180%;
+  font-weight: bold;
+  margin: 1.6em 0 .8em;
+  text-transform: none;
+}
+.styleguide blockquote {
+  background-color: #ffffff;
+  border-left: 2px solid #bdbdbd;
+  margin: 1.6em auto;
+  padding: .4em 2.5em;
+  width: 85%;
+}
+
+.styleguide code{
+  font-size: 100%;
+}
+
+.styleguide h1{
+  font-size: 250%;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.styleguide h2{
+  font-size: 180%;
+  line-height: 140%;
+}
+
+.styleguide h3{
+  font-size: 140%;
+  line-height: 130%;
+}
+
+.styleguide h4{
+  font-size: 120%;
+  line-height: 120%;
+}
+
+.styleguide h5{
+  font-size: 110%;
+  line-height: 110%;
+}
+
+.styleguide h6{
+  font-size: 100%;
+  line-height: 140%;
+}
 
 /**
  * Tables.
@@ -662,7 +725,7 @@ a.button {
   text-align: center;
   font-weight: normal;
   font-size: 1.077em;
-  font-family: "Lucida Grande", Verdana, sans-serif;
+  font-family: "Open Sans", "Lucida Grande", Verdana, sans-serif;
   border: 1px solid #e4e4e4;
   border-bottom: 1px solid #b4b4b4;
   border-left-color: #d2d2d2;
@@ -847,7 +910,7 @@ div.admin-options {
 }
 div.admin-options label {
   text-transform: uppercase;
-  font: 0.846em/1.875em Lucida Grande, Lucida Sans Unicode, sans-serif;
+  font: 0.846em/1.875em "Open Sans", Lucida Grande, Lucida Sans Unicode, sans-serif;
 }
 div.admin-options label,
 div.admin-options div.form-item {
